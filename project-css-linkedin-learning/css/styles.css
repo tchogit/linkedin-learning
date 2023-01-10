@@ -1,0 +1,240 @@
+/* COLOR Palette 
+
+Lavender Web (light shade lavender) - #D7DAE5;
+Beau Blue (Baby Blue) - #BCCFDC;
+Rich Black FOGRA 39 - #060D0E;
+Snow (White) -#F7F2F2;
+Celtic Blue - #266DD3;
+snow white #F3F3F7 */
+
+
+/* Global styles 
+------------------------------------------------*/
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    color: #343434;
+    margin: 0;
+    font-family: "Hanken Grotesk", sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+img {
+    width: 300px;
+}
+
+
+/* link styles */
+
+a:hover {
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+h1,
+h2 {
+    font-family: "Unbounded", cursive;
+    margin: 0;
+}
+
+.content-wrap {
+    max-width: 800px;
+    width: 85%;
+    margin: 0 auto;
+    padding: 60px 0;
+}
+
+h3 {
+    margin-bottom: 0;
+}
+
+.item-details h3+p {
+    font-style: italic;
+}
+
+.item-details h3~p {
+    margin: 0;
+}
+
+.divider>section {
+    border-bottom: 1px dashed #1b065e;
+    padding: 25px 0;
+}
+
+.divider>section:last-of-type {
+    border-bottom: none;
+}
+
+
+/* Profile
+------------------------------------------------*/
+
+header {
+    background-color: #1b065e;
+    color: #f3f3f7;
+}
+
+
+/* Projects / Portfolio
+------------------------------------------------*/
+
+.projects {
+    background-color: #d7dae5;
+}
+
+.btn {
+    background-color: #1b065e;
+    padding: 8px;
+    color: #d7dae5;
+    border-radius: 4px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn:hover {
+    background-color: rgba(27, 6, 94, 0.6);
+}
+
+.btn:active {
+    background-color: #d7dae5;
+    color: #1b065e;
+    border: 2px solid;
+    border-color: #1b065e;
+}
+
+.linkedin-btn {
+    background-color: #0073b1;
+    color: #ffffffff;
+    font-weight: 600;
+}
+
+.linkedin-btn:hover {
+    background-color: #c37d16;
+}
+
+.project-item {
+    overflow: hidden;
+}
+
+.project-item h3 {
+    margin-top: 0;
+}
+
+
+/* Work Experience
+------------------------------------------------*/
+
+.work-ecperience {
+    background-color: #bccfdc;
+}
+
+
+/* Education Certification
+------------------------------------------------*/
+
+.education {
+    background-image: url(../placeholder-images/sharon-mccutcheon-unsplash.jpg);
+    background-size: cover;
+    background-position: top right;
+    padding-bottom: 60px;
+}
+
+.education p {
+    width: 60%;
+}
+
+
+/* Contact Info
+------------------------------------------------*/
+
+footer {
+    background-color: #f3f3f7;
+    /* color: #586189; */
+}
+
+.contact-list {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+}
+
+.contact-list a {
+    padding: 15px;
+    display: inline-block;
+    color: #343434;
+}
+
+.contact-list img {
+    width: 64px;
+}
+
+.contact-list img:hover {
+    border: 3px solid #0073b1;
+    border-radius: 50%
+}
+
+
+/* Responsive styles
+------------------------------------------------*/
+
+@media screen and (min-width: 750px) {
+    /* project section */
+    .project-item img {
+        float: left;
+        margin-right: 20px;
+    }
+    /* 
+            job section */
+    .job-item {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        column-gap: 20px;
+    }
+    header,
+    footer {
+        text-align: center;
+    }
+    .contact-list {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 749px) {
+    h1 {
+        font-size: 50px;
+        margin-bottom: 20px;
+    }
+    h1,
+    h2 {
+        line-height: 1;
+    }
+    .contact-list a {
+        padding: 5px;
+    }
+    @media screen and (max-width: 460px) {
+        h1 {
+            font-size: 40px;
+        }
+        h1,
+        h2 {
+            line-height: 1.2;
+        }
+        .education {
+            color: #ffffffff;
+            text-shadow: #000000 1px 1px 1px;
+        }
+    }
+}
